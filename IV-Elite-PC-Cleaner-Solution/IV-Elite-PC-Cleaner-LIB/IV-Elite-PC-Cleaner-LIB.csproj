@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>IVolt.Apps.IV_Elite_PC_Cleaner</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>IV-Elite-PC-Cleaner-LIB</AssemblyName>
+    <ApplicationIcon>V1_1.ico</ApplicationIcon>
+    <BaseOutputPath>E:\Github-IVolt-APPS\RELEASES\IV-Elite-PC-Cleaner-LIB\$(Configuration)\$(Platform)\</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="V1_1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SQLite.Interop.dll" Version="1.0.103" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.4" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+  </ItemGroup>
+
+</Project>

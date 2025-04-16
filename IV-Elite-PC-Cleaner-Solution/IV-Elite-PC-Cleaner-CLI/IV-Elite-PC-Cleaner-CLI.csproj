@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>IVolt.Apps.IV_Elite_PC_Cleaner.CLI</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>V1_1.ico</ApplicationIcon>
+    <BaseOutputPath>E:\Github-IVolt-APPS\RELEASES\IV-Elite-PC-Cleaner-CLI\$(Configuration)\$(Platform)\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="V1_1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="9.0.4" />
+    <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.119" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IV-Elite-PC-Cleaner-LIB\IV-Elite-PC-Cleaner-LIB.csproj" />
+  </ItemGroup>
+
+</Project>
